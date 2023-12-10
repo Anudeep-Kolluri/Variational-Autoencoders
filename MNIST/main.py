@@ -5,6 +5,8 @@ import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
 
+path = r'.MNIST/assets/vae-weights.h5'
+
 
 def load_data():
     (x_train, _), (x_test, _) = keras.datasets.mnist.load_data()
@@ -63,7 +65,7 @@ def get_model():
 
 
     vae.compile(optimizer="adam", loss=vae_loss)
-    vae.load_weights(r'./assets/vae-weights.h5')
+    vae.load_weights(path)
 
     return vae, decoder
 
