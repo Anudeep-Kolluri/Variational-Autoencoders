@@ -7,7 +7,7 @@ from tensorflow.keras import layers
 
 import os
 
-path = os.path.join('assets', 'vae-weights.h5')
+path = os.path.join(os.getcwd(), 'assets', 'vae-weights.h5')
 
 
 def load_data():
