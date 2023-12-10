@@ -5,7 +5,9 @@ import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
 
-path = r'.MNIST/assets/vae-weights.h5'
+import os
+
+path = os.path.join('assets', 'vae-weights.h5')
 
 
 def load_data():
