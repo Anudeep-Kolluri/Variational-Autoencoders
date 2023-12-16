@@ -75,6 +75,18 @@ def get_model():
 def main():
     st.title("Variational Autoencoders")
 
+    st.markdown('''Variational Autoencoders (VAEs) are a type of generative model used in machine learning to capture and reproduce 
+             the underlying distribution of input data. They belong to the family of autoencoders, which are neural networks designed 
+             for data compression and reconstruction. The key innovation of VAEs lies in their ability to generate new, realistic 
+             data samples by sampling from a learned probabilistic latent space.''')
+                
+    st.markdown('''This is a prototype of the actual model since streamlit doesnt have interactive graphs to take dynamic inputs.
+             The actual project looks as follows''')
+    
+    st.markdown('''![CelebA Demo](https://github.com/Anudeep-Kolluri/Variational-Autoencoders/blob/main/CelebA%20Demo%20Resized.gif)''')
+    
+    st.markdown('''The only work around i could think of is using sliders but the original project can be found on my [github](https://github.com/Anudeep-Kolluri/Variational-Autoencoders)''')
+
     # Create sliders for x and y axes
     x_value = st.slider("Select X value", -3.0, 11.0, 0.0, 0.01)
     y_value = st.slider("Select Y value", -7.0, 4.0, 0.0, 0.01)
